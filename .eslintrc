@@ -21,7 +21,8 @@
     "fsd/jq-cache-dom-elements": "error",
     "fsd/jq-use-js-prefix-in-selector": "error",
     "fsd/no-function-declaration-in-event-listener": "error",
-    "fsd/split-conditionals": "error"
+    "fsd/split-conditionals": "error",
+    "import/extensions": "off"
   },
   
   "plugins": [
@@ -36,6 +37,9 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     "prettier"
   ]
 }

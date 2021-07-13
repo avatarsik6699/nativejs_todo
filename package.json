@@ -39,6 +39,7 @@
     "husky": "^6.0.0",
     "image-webpack-loader": "^7.0.1",
     "mini-css-extract-plugin": "^1.6.0",
+    "normalize.css": "^8.0.1",
     "postcss-fixes": "^2.0.1",
     "postcss-loader": "^5.2.0",
     "postcss-sort-media-queries": "^3.9.10",
@@ -60,7 +61,7 @@
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   },
-    "browserslist": [
+  "browserslist": [
     "> 1%",
     "last 3 version"
   ]
