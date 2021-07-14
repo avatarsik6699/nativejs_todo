@@ -1,4 +1,5 @@
 interface ITodoProps {
+  components: [];
   header: {
     text: string;
     backgroundColor: string;
@@ -9,5 +10,4 @@ interface ITodoProps {
   };
 }
 
-// eslint-disable-next-line import/prefer-default-export
-export type {ITodoProps};
+export type { ITodoProps };

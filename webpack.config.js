@@ -177,7 +177,8 @@ module.exports = env => {
     resolve: {
       extensions: ['.ts', '.js'],
       alias: {
-        $root: path.resolve(__dirname, 'src'),
+        // ui: path.resolve(__dirname, './src/ui/'),
+        'services': path.resolve(__dirname, './src/services/')
       },
     },
     optimization: optimization(env),

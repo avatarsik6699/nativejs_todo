@@ -1,12 +1,6 @@
-export default class TodoHeader {
-  private template = `
-  <div class="todo-header">
-    <div class="todo-header__wrapper">
-      <span class="todo-header__title">Text text text</span>
-    </div>
-  </div>`;
+import { Component } from 'ui/common/Component';
+import { getTemplate } from './template';
 
-  public render = (anchor: Element): void => {
-    anchor.insertAdjacentHTML('afterbegin', this.template);
-  };
+export class TodoHeader extends Component {
+  toHTML = () => getTemplate();
 }

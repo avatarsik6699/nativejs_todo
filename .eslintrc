@@ -17,28 +17,34 @@
     "no-use-before-define": "error",
     "no-console": "warn",
     "fsd/hof-name-prefix": "error",
-    "fsd/no-heavy-constructor": "error",
+    "fsd/no-heavy-constructor": "off", // запрещает инициализировать $el в DomManipulator 
     "fsd/jq-cache-dom-elements": "error",
     "fsd/jq-use-js-prefix-in-selector": "error",
     "fsd/no-function-declaration-in-event-listener": "error",
     "fsd/split-conditionals": "error",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
   },
-  
-  "plugins": [
-    "@typescript-eslint",
-    "prettier",
-    "fsd"
-  ],
 
-  // порядок играет роль (нижние > верхних). 
+  "plugins": ["@typescript-eslint", "prettier", "fsd"],
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+
   "extends": [
     "airbnb-base",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
+    // "plugin:import/errors",
+    // "plugin:import/warnings",
     "plugin:import/typescript",
     "prettier"
   ]
